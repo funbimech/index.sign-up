@@ -1,0 +1,960 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: my-cool font;
+  src: url(./Norse-Bold.otf);
+}
+.container {
+  display: flex;
+  height: fit-content;
+}
+.content {
+  flex-direction: column;
+  height: 95vh;
+  width: 50vw;
+}
+.positioning {
+  position: relative;
+  /* border: 5px solid red;  */
+  flex-direction: column;
+  height: 95vh;
+  width: 35vw;
+}
+.flowers-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.host-logo {
+  position: absolute;
+  text-align: center;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  top: 8rem;
+  width: 100%;
+  font-size: 1.5em;
+}
+.odins-logo {
+  max-width: 5vw;
+}
+.name {
+  position: absolute;
+  top: 0.6em;
+   font-family: my-cool font, sans-serif; 
+  padding-left: 5px;
+  font-size: 1.8em;
+}
+.content-text {
+  display: flex;
+  width: 100%;
+  height: 32vh;
+  background-color: lightgrey;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cool-paragraph {
+  display: flex;
+  height: 3em;
+  width: 26em;
+  letter-spacing: 0.8px;
+  margin-top: 5em;
+}
+.cool {
+  display: flex;
+  width: 26em;
+  margin-top: 1em;
+}
+.cooltext {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-right: 15em;
+}
+.cooldiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-right: 13em;
+}
+
+.input-section {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  flex-direction: column;
+}
+.last-section {
+  display: flex;
+  width: 100%;
+  height: 28vh;
+  background-color: lightgray;
+}
+input :invalid {
+  border-color: red;
+}
+input :valid {
+  border-color: green;
+}
+.header-host {
+  display: flex;
+  width: 100%;
+  height: 6vh;
+  padding-left: 1.5rem;
+}
+.moretext {
+  display: flex;
+  width: 190px;
+  height: 20px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+.host-input {
+  display: flex;
+  width: 100%;
+  height: 26vh;
+}
+.box-1 {
+  display: flex;
+  /* border: 5px solid cyan; */
+  width: 17rem;
+  flex-direction: column;
+  height: 11.5em;
+}
+.box-2 {
+  display: flex;
+  width: 17rem;
+  margin-left: 35px;
+  flex-direction: column;
+  height: 11.5em;
+}
+.box-3 {
+  display: flex;
+  height: 3em;
+  flex-direction: column;
+}
+.box-4 {
+  display: flex;
+  height: 3em;
+  flex-direction: column;
+}
+.box-5 {
+  display: flex;
+  height: 3.5em;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.wrapper {
+  display: flex;
+  width: fit-content;
+  height: 1.3rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  margin-top: 6px;
+}
+.box-6 {
+  display: flex;
+  height: 3em;
+  flex-direction: column;
+}
+.box-7 {
+  display: flex;
+  height: 3em;
+  flex-direction: column;
+}
+.box-8 {
+  display: flex;
+  height: 3.5em;
+  flex-direction: column;
+}
+.nametext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+}
+#form1 {
+  width: 15em;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  border-color: green;
+}
+.mailtext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+  margin-bottom: 6px;
+}
+#form2 {
+  width: 15em;
+  margin-left: 25px;
+  border-color: green;
+}
+.passtext {
+  font-size: bold;
+  margin-left: -7px;
+  margin-bottom: 0px;
+}
+#form3 {
+  width: 15em;
+  margin-left: -7px;
+  margin-top: 5px;
+  border-color: green;
+}
+.lname {
+  font-size: 0.6rem;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form4 {
+  width: 15em;
+  margin-left: 25px;
+  margin-top: 5px;
+  border: 1px light #e5e7eb;
+  border-color: green;
+}
+.numtext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form5 {
+  width: 15em;
+  margin-left: 25px;
+  margin-top: 5px;
+  border-color: green;
+}
+.cpass {
+  font-size: 0.7em;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form6 {
+  width: 15em;
+  margin-left: 25px;
+  margin-top: 12px;
+  border-color: green;
+}
+.box-9 {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  height: 8em;
+}
+.box-10 {
+  display: flex;
+  height: 3em;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+.box-11 {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.btn {
+  height: 2.7em;
+  color: white;
+  margin-top: 9px;
+  margin-right: 22em;
+  background-color: #596d48;
+}
+@media (max-width: 1024px) {
+  .positioning {
+    position: relative;
+    flex-direction: column;
+    height: 95vh;
+    width: 30vw;
+  }
+
+  .content {
+    flex-direction: column;
+    height: 92vh;
+    width: 70vw;
+  }
+  .last-section {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: lightgray;
+  }
+  .passtext {
+    font-size: bold;
+    margin-left: -7px;
+    margin-bottom: 0px;
+  }
+  #form3 {
+    width: 15em;
+    margin-left: -7px;
+    margin-top: 5px;
+    border-color: green;
+  }
+  .cool-paragraph {
+    display: flex;
+    height: 3em;
+    width: 26em;
+    letter-spacing: 0.1px;
+    margin-top: 5em;
+    margin-left: 12vw;
+  }
+  .cool {
+    display: flex;
+    width: 26em;
+    margin-top: 0em;
+    margin-left: 12vw;
+  }
+  .name {
+    position: absolute;
+    top: 0.3em;
+    font-family: my-cool font, sans-serif;
+    padding-left: 5px;
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 768px) {
+  .positioning {
+    position: relative;
+    flex-direction: column;
+    height: 93vh;
+    width: 40vw;
+  }
+
+  .content {
+    flex-direction: column;
+    height: 92vh;
+    width: 60vw;
+  }
+  .last-section {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: lightgray;
+  }
+  .passtext {
+    font-size: bold;
+    margin-left: 12px;
+    margin-bottom: 0px;
+  }
+  #form3 {
+    width: 13em;
+    margin-left: 12px;
+    margin-top: 5px;
+    border-color: green;
+  }
+  .cool-paragraph {
+    display: flex;
+    height: 3em;
+    width: 26em;
+    letter-spacing: 0.1px;
+    margin-top: 3em;
+    margin-left: 20vw;
+  }
+  .cool {
+    display: flex;
+    width: 26em;
+    margin-top: 1em;
+    margin-left: 20vw;
+  }
+  
+  .flowers-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 88%;
+  }
+  
+  .box-2 {
+    display: flex;
+    width: 17rem;
+    margin-left: 35px;
+    flex-direction: column;
+    height: 11.5em;
+  }
+  #form6 {
+    width: 12em;
+    margin-left: 2px;
+    margin-top: 9px;
+    border-color: green;
+  }
+  .cpass {
+    font-size: 0.7em;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+#form1 {
+  width: 13em;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  border-color: green;
+}
+.mailtext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+  margin-bottom: 6px;
+}
+#form2 {
+  width: 13em;
+  margin-left: 25px;
+  border-color: green;
+}
+
+.lname {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form4 {
+  width: 12em;
+  margin-left: 2px;
+  margin-top: 5px;
+  border: 1px light #e5e7eb;
+  border-color: green;
+}
+.numtext {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form5 {
+  width: 12em;
+  margin-left: 2px;
+  margin-top: 5px;
+  border-color: green;
+}
+.nametext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+}
+.name {
+  position: absolute;
+  top: 0.1em;
+  font-family: my-cool font, sans-serif;
+  padding-left: 5px;
+  font-size: 1.8em;
+}
+}
+@media (max-width: 425px) {
+  .positioning {
+    position: relative;
+    flex-direction: column;
+    height: 93vh;
+    width: 50vw;
+  }
+
+  .content {
+    flex-direction: column;
+    height: 92vh;
+    width: 60vw;
+  }
+  .cool-paragraph {
+    display: flex;
+    height: 6em;
+    width: 15em;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
+    align-items: center;
+    margin-left: 2em;
+  }
+  .content-text {
+    display: flex;
+    width: 100%;
+    height: 32vh;
+    background-color: lightgrey;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cool {
+    display: flex;
+    width: 26em;
+    top: 1em;
+    margin-top: -6px;
+    margin-left: 22px;
+  }
+  .cooltext {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 15em;
+    height: 8em;
+    align-items: center;
+    
+  }
+  .cooldiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 6px;
+    margin-right: -3em;
+    height: 170px;
+  }
+  .last-section {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: lightgray;
+  }
+  .passtext {
+    font-size: bold;
+    margin-left: 18px;
+    margin-bottom: 0px;
+  }
+  #form3 {
+    width: 6em;
+    margin-left: 18px;
+    margin-top: 5px;
+    border-color: green;
+  }
+  
+  .flowers-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 88%;
+  }
+  
+  .box-2 {
+    display: flex;
+    width: 17rem;
+    margin-left: 35px;
+    flex-direction: column;
+    height: 11.5em;
+  }
+  #form6 {
+    width: 6em;
+    margin-left: 2px;
+    margin-top: 9px;
+    border-color: green;
+  }
+  .cpass {
+    font-size: 0.6;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+#form1 {
+  width: 6em;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  border-color: green;
+}
+.mailtext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+  margin-bottom: 6px;
+}
+#form2 {
+  width: 6em;
+  margin-left: 25px;
+  border-color: green;
+}
+
+.lname {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form4 {
+  width: 6em;
+  margin-left: 2px;
+  margin-top: 5px;
+  border: 1px light #e5e7eb;
+  border-color: green;
+}
+.numtext {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form5 {
+  width: 6em;
+  margin-left: 2px;
+  margin-top: 5px;
+  border-color: green;
+  
+}
+.nametext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+}
+.name {
+  position: absolute;
+  top: 0.1em;
+  font-family: my-cool font, sans-serif;
+  padding-left: 5px;
+  font-size: 1.2em;
+}
+.odins-logo {
+  max-width: 5vw;
+  margin-top: 2px;
+}
+.btn {
+  height: 2.7em;
+  color: white;
+  margin-top: 9px;
+  margin-left: 1.8em;
+  background-color: #596d48;
+}
+}
+@media (max-width: 375px) {
+  .positioning {
+    position: relative;
+    flex-direction: column;
+    height: 93vh;
+    width: 50vw;
+  }
+
+  .content {
+    flex-direction: column;
+    height: 92vh;
+    width: 60vw;
+  }
+  .cool-paragraph {
+    display: flex;
+    height: 6em;
+    width: 15em;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
+    align-items: center;
+    margin-left: 2em;
+  }
+  .content-text {
+    display: flex;
+    width: 100%;
+    height: 32vh;
+    background-color: lightgrey;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cool {
+    display: flex;
+    width: 26em;
+    top: 1em;
+    margin-top: -6px;
+    margin-left: 22px;
+  }
+  .cooltext {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 15em;
+    height: 8em;
+    align-items: center;
+    
+  }
+  .cooldiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 6px;
+    margin-right: -3em;
+    height: 170px;
+  }
+  .last-section {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: lightgray;
+  }
+  .passtext {
+    font-size: bold;
+    margin-left: 18px;
+    margin-bottom: 0px;
+  }
+  #form3 {
+    width: 5em;
+    margin-left: 18px;
+    margin-top: 5px;
+    border-color: green;
+  }
+  
+  .flowers-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 88%;
+  }
+  
+  .box-2 {
+    display: flex;
+    width: 17rem;
+    margin-left: 35px;
+    flex-direction: column;
+    height: 11.5em;
+  }
+  #form6 {
+    width: 5em;
+    margin-left: 1px;
+    margin-top: 9px;
+    border-color: green;
+  }
+  .cpass {
+    font-size: 0.6;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+#form1 {
+  width: 5em;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  border-color: green;
+}
+.mailtext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+  margin-bottom: 6px;
+}
+#form2 {
+  width: 5em;
+  margin-left: 25px;
+  border-color: green;
+}
+
+.lname {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form4 {
+  width: 5em;
+  margin-left: 2px;
+  margin-top: 5px;
+  border: 1px light #e5e7eb;
+  border-color: green;
+}
+.numtext {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+#form5 {
+  width: 5em;
+  margin-left: 2px;
+  margin-top: 5px;
+  border-color: green;
+  
+}
+.nametext {
+  font-size: 0.6rem;
+  margin-left: 25px;
+}
+.name {
+  position: absolute;
+  top: 0.1em;
+  font-family: my-cool font, sans-serif;
+  padding-left: 5px;
+  font-size: 1.2em;
+}
+.odins-logo {
+  max-width: 5vw;
+  margin-top: 2px;
+}
+.btn {
+  height: 2.7em;
+  color: white;
+  margin-top: 9px;
+  margin-left: 1.8em;
+  background-color: #596d48;
+}
+.box-11 {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+}
+@media (max-width: 320px)  {
+
+
+ .positioning {
+  position: relative;
+  flex-direction: column;
+  height: 92vh;
+  width: 60vw;
+}
+
+.content {
+  flex-direction: column;
+  height: 89vh;
+  width: 60vw;
+}
+.cool-paragraph {
+  display: flex;
+  height: 9em;
+  width: 15em;
+  letter-spacing: 0.1px;
+  align-items: center;
+  margin-left: 1em;
+  font-size: 0.9em;
+margin-bottom: 6px;
+}
+.content-text {
+  display: flex;
+  width: 100%;
+  height: 32vh;
+  background-color: lightgrey;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+.cool {
+  display: flex;
+  width: 26em;
+  margin-top: -6px;
+  margin-left: 22px;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+.cooltext {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-left: 15em;
+  height: 8em;
+  align-items: center;
+  margin-bottom: 29px;
+}
+.cooldiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-right: -3em;
+  height: 170px;
+}
+.last-section {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  background-color: lightgray;
+}
+.passtext {
+  font-size: bold;
+  margin-left: 18px;
+  margin-bottom: 0px;
+}
+#form3 {
+  width: 4em;
+  margin-left: 18px;
+  margin-top: 5px;
+  border-color: green;
+}
+
+.flowers-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 88%;
+}
+
+.box-2 {
+  display: flex;
+  width: 17rem;
+  margin-left: 35px;
+  flex-direction: column;
+  height: 11.5em;
+}
+#form6 {
+  width: 4em;
+  margin-left: 1px;
+  margin-top: 9px;
+  border-color: green;
+}
+.cpass {
+  font-size: 0.6;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+#form1 {
+width: 4em;
+margin-left: 25px;
+margin-bottom: 5px;
+border-color: green;
+}
+.mailtext {
+font-size: 0.6rem;
+margin-left: 25px;
+margin-bottom: 6px;
+}
+#form2 {
+width: 4em;
+margin-left: 25px;
+border-color: green;
+}
+
+.lname {
+font-size: 0.6rem;
+margin-left: 2px;
+margin-bottom: 0px;
+margin-top: 5px;
+}
+#form4 {
+width: 4em;
+margin-left: 2px;
+margin-top: 5px;
+border: 1px light #e5e7eb;
+border-color: green;
+}
+.numtext {
+font-size: 0.6rem;
+margin-left: 2px;
+margin-bottom: 0px;
+margin-top: 5px;
+}
+#form5 {
+width: 4em;
+margin-left: 2px;
+margin-top: 5px;
+border-color: green;
+
+}
+.nametext {
+font-size: 0.6rem;
+margin-left: 25px;
+}
+.name {
+position: absolute;
+top: 0.1em;
+font-family: my-cool font, sans-serif;
+padding-left: 5px;
+font-size: 1.2em;
+}
+.odins-logo {
+max-width: 5vw;
+margin-top: 2px;
+}
+.btn {
+height: 2.7em;
+color: white;
+margin-top: 9px;
+margin-left: 1.8em;
+background-color: #596d48;
+}
+.box-11 {
+display: flex;
+margin-top: 5px;
+margin-left: 15px;
+font-size: 0.8em;
+}
+}
